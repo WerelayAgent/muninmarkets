@@ -10,19 +10,15 @@
       "destination": "https://mimirmarkets.xyz/_next/:path*"
     },
     {
-      "source": "/(.*\\.(?:png|jpg|jpeg|svg|ico|webp|woff2?))$",
-      "destination": "https://mimirmarkets.xyz/$1"
-    },
-    {
       "source": "/en/markets",
-      "destination": "/en.html" 
+      "destination": "/en.html"
     },
     {
       "source": "/en",
       "destination": "/en.html"
     },
     {
-      "source": "/(.*)",
+      "source": "/:path*",
       "destination": "/index.html"
     }
   ]
