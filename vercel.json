@@ -1,5 +1,26 @@
 {
+  "framework": null,
   "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://mimirmarkets.xyz/api/:path*"
+    },
+    {
+      "source": "/_next/:path*",
+      "destination": "https://mimirmarkets.xyz/_next/:path*"
+    },
+    {
+      "source": "/(.*\\.(?:png|jpg|jpeg|svg|ico|webp|woff2?))$",
+      "destination": "https://mimirmarkets.xyz/$1"
+    },
+    {
+      "source": "/en/markets",
+      "destination": "/en.html" 
+    },
+    {
+      "source": "/en",
+      "destination": "/en.html"
+    },
     {
       "source": "/(.*)",
       "destination": "/index.html"
