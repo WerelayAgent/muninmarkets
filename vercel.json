@@ -1,0 +1,25 @@
+{
+  "framework": null,
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://mimirmarkets.xyz/api/:path*"
+    },
+    {
+      "source": "/_assets/:path*",
+      "destination": "https://mimirmarkets.xyz/_next/:path*"
+    },
+    {
+      "source": "/en/markets",
+      "destination": "/en.html"
+    },
+    {
+      "source": "/en",
+      "destination": "/en.html"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
